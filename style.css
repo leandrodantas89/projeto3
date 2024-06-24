@@ -1,0 +1,256 @@
+/* Reset de estilos básicos e configurações gerais */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100%; /* Para garantir que o rodapé fique no final da página */
+    position: relative; /* Para o rodapé fixo funcionar corretamente */
+    background-color: #f8f8f8; /* Fundo branco */
+}
+
+/* Estilos para o cabeçalho */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e3e3e3;
+    padding: 10px;
+}
+
+header img {
+    max-width: 100px;
+    height: auto;
+}
+
+header .titulo h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.bar {
+    background-color: #cccccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.bar nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.bar nav form {
+    display: flex;
+}
+
+.bar nav form input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    margin-right: 5px;
+}
+
+.bar nav form button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Estilos para o content */
+.content {
+    display: grid;
+    grid-template-columns: 1fr minmax(300px, 1000px) 1fr; /* Define as colunas do grid */
+    gap: 20px; /* Espaçamento entre as áreas do grid */
+
+    max-width: 1200px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo na página */
+}
+
+main {
+    grid-column: 2 / 3; /* Ocupa a segunda coluna */
+    background-color: #fff; /* Fundo branco */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main h1{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+main img{
+    width: 550px;
+    height: 450px;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+}
+
+main h3{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+#anchors img{
+    width: 250px;
+    height: 50px;
+}
+
+.sidebar,
+#anchors {
+    
+    padding: 15px; /* Espaçamento interno aumentado */
+    border-radius: 5px;
+    
+    
+}
+
+.sidebar h2,
+#anchors h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+    text-align: center; /* Centraliza o título */
+    font-family: 'Playfair Display', serif;
+
+}
+
+.sidebar ul,
+#anchors ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar a,
+#anchors a {
+    font-family: 'Playfair Display', serif;
+    color: #36445C;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 8px 0; /* Espaçamento interno vertical */
+    text-align: center; /* Centraliza o texto */
+}
+
+.sidebar a:hover,
+#anchors a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para a tabela */
+table.dados {
+    width: 100%;
+    border-collapse: collapse;
+    border: solid 1px gray;
+    
+}
+
+/* Estilo para células de cabeçalho e dados */
+table.dados th, table.dados td {
+    padding: 8px;
+}
+
+/* Estilo para o título da tabela */
+.tb-titulo {
+    background-color: #E31837;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border: solid 2px #FFB612;
+    padding: 10px;
+}
+
+/* Estilo para o título secundário */
+.tb-titulo2 {
+    background-color: #FFB612;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+.mascote{
+    display: flex;
+}
+
+.sbs{
+    display: flex;
+    padding: 5px;
+}
+
+/* Estilo para a seção de informações */
+.info {
+    background-color: #eeeeee;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilo para a seção do logo */
+.logo {
+    text-align: center;
+    padding: 10px;
+}
+
+.logo figcaption{
+    font-weight: bold;
+}
+
+/* Estilo para a seção da imagem do uniforme */
+.uni {
+    text-align: center;
+    padding: 10px;
+}
+
+.uni figure{
+    height: 100%;
+}
+
+/* Ajuste para a largura máxima da imagem */
+.uni figure img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Ajuste para a lista de títulos da liga */
+ul {
+    padding-left: 20px; /* Recuo à esquerda para a lista */
+}
+
+footer {
+    background-color: #e3e3e3;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; /* Posição relativa */
+    margin-top: 20px; /* Espaçamento do topo */
+}
+
+.assinatura {
+    font-style: italic; /* Aplica estilo itálico */
+    font-size: 1.0em; /* Ajusta o tamanho do texto */
+}
+
+
+
+
+
+
+
+
+
+
